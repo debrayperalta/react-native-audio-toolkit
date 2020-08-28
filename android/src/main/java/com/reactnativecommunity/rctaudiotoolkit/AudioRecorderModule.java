@@ -96,7 +96,7 @@ public class AudioRecorderModule extends ReactContextBaseJavaModule implements
             case "amr":
                 return MediaRecorder.OutputFormat.AMR_WB;
             case "opus":
-                return MediaRecorder.AudioEncoder.OPUS
+                return MediaRecorder.AudioEncoder.OPUS;
             default:
                 Log.e(LOG_TAG, "Format with name " + name + " not found.");
                 return MediaRecorder.OutputFormat.DEFAULT;
@@ -120,7 +120,7 @@ public class AudioRecorderModule extends ReactContextBaseJavaModule implements
             case "amr":
                 return MediaRecorder.AudioEncoder.AMR_WB;
             case "opus":
-                return MediaRecorder.AudioEncoder.OPUS
+                return MediaRecorder.AudioEncoder.OPUS;
             default:
                 Log.e(LOG_TAG, "Encoder with name " + name + " not found.");
                 return MediaRecorder.AudioEncoder.DEFAULT;
