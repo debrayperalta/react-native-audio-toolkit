@@ -45,9 +45,6 @@
         if ([formatString isEqualToString:@"ac3"]) {
             format = [NSNumber numberWithInt:kAudioFormatMPEG4AAC];
         }
-        else if ([formatString isEqualToString:@"opus"]) {
-                   format = [NSNumber numberWithInt:kAudioFormatOpus];
-        }
     }
     
     
